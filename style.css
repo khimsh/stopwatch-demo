@@ -1,0 +1,102 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    /* background: #43cea2;
+    background: -webkit-linear-gradient(to right, #185a9d, #43cea2);
+    background: linear-gradient(to right, #185a9d, #43cea2); */
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+html {
+    font-size: 100%;
+}
+
+.app {
+    background-color: #ffffff;
+
+    padding: 2rem;
+    border-radius: 5px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.app__title {
+    color: #0F2027;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.app__display-time {
+    color: #0F2027;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+
+    background-color: rgba(32, 58, 67, 0.2);
+    padding: .4rem .4rem;
+    border-radius: 3px;
+}
+
+.app__controls {
+    margin-bottom: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.app__button {
+    background: #2C5364;
+    flex: 1;
+
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: .5rem 1rem;
+
+    color: #ffffff;
+    font-family: inherit;
+    white-space: nowrap;
+    font-size: 1rem;
+    letter-spacing: 1px;
+
+    box-shadow: 0 .2rem .2rem rgba(0,0,0,.3);
+    transition: all .1s ease-in;
+    outline: none;
+}
+
+.app__button:active {
+    box-shadow: 0 0 .1rem rgba(0,0,0,.6);
+}
+
+.app__button:not(:last-child) {
+    margin-right: .6rem;
+}
+
+.app__li {
+    list-style-type: none;
+    margin-bottom: .8rem;
+    padding-bottom: .5rem;
+    color: #0F2027;
+    font-size: 1.2rem;
+    border-bottom: 1px dashed rgba(15, 32, 39, 0.3);
+}
+
+h2 {
+    margin-bottom: 1rem;
+    color: #0F2027;
+}

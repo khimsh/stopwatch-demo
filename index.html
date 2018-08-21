@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <h1 class="app__title">Stopwatch Demo</h1>
+
+        <div id="displayTime" class="app__display-time">0</div>
+
+        <div class="app__controls">
+            <button id="startStop" class="app__button">Start/Stop</button>
+            <button id="reset" class="app__button">Reset</button>
+            <button id="recordTime" class="app__button">Record Time</button>
+        </div>
+
+        <h2>Past Times</h2>
+        <ul id="pastTimes"></ul>
+    </div><!-- .app -->
+
+
+    <script src="stopwatch.js"></script>
+</body>
+</html>
